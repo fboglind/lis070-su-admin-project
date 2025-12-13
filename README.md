@@ -1,10 +1,10 @@
 # Automated Course Classification for Stockholm University Administration
 
-This repository contains the code and materials for my LIS070 Project Course at Stockholm University, focused on developing an automated system for classifying Swedish university courses into disciplinary domains (*utbildningsområden*, UO) that determine state funding allocations.
+This repository contains the code and materials for a NLP project Course, part of the AI and Language graduate programme at Stockholm University. The goal was to develop an automated system for classifying Swedish university courses into disciplinary domains (*utbildningsområden*, UO). UO classification determine state funding allocations.
 
 ## Project Overview
 
-Swedish universities must classify courses into predefined disciplinary domains for funding purposes. This project explores machine learning approaches to automate this classification task using course descriptions from Stockholm University's Ladok administrative system.
+Swedish universities must classify courses into predefined disciplinary domains for funding purposes. This project explores machine learning approaches to automatically classify courses (of which some are interdisciplinary) using course descriptions from Stockholm University's database.
 
 ### Key Findings
 
@@ -52,6 +52,13 @@ Swedish universities must classify courses into predefined disciplinary domains 
 | TF-IDF + Linear SVC | Baseline | Support vector classification |
 | KB-BERT (binary) | Multi-label | Swedish BERT for binary UO classification |
 | KB-BERT (distributional) | LDL | Predicts percentage distributions across UOs |
+
+
+**KB-BERT** (bert-base-swedish-cased), a Swedish BERT model 
+
+- Model card: https://huggingface.co/KB/bert-base-swedish-cased
+- Paper: [Playing with Words at the National Library of Sweden](https://arxiv.org/abs/2007.01658)
+
 
 ### Technical Details
 
