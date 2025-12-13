@@ -37,7 +37,7 @@ Swedish universities must classify courses into predefined disciplinary domains 
 │
 ├── su_utils.py                             # Shared utility functions
 └── Kursplanekorpus-2023-original-ej-bearb-head50.csv
-                                            # Sample data (50 courses)
+                                            # Sample data (50 lines)
 ```
 
 ## Methods
@@ -66,7 +66,7 @@ Swedish universities must classify courses into predefined disciplinary domains 
 
 ## Data
 
-The full dataset consists of course descriptions from Stockholm University's Ladok system with UO classification labels and percentage distributions. A 50-course sample is included in this repository.
+The full dataset consists of course descriptions from Stockholm University's Ladok system with UO classification labels and percentage distributions. A 50-line sample is included in this repository.
 
 ## Key dependencies:
 - transformers
