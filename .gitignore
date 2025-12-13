@@ -9,8 +9,9 @@ __pycache__/
 *.pyo
 
 # data
-*.csv
 *.json
+*.csv
+!Kursplanekorpus-2023-original-ej-bearb-head50.csv
 **raw_data/
 **data/
 **backup/
