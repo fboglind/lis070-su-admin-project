@@ -8,10 +8,8 @@ Swedish universities must classify courses into predefined disciplinary domains 
 
 ### Key Findings
 
-- **KB-BERT** achieves strong performance: 90.9% subset accuracy for multi-label classification and 92.9% top-1 accuracy for distributional prediction
-- **Label Distribution Learning (LDL)** substantially outperforms binary classification with post-hoc normalization (MAE: 1.39 vs 2.75 percentage points)
-- Validation confirms the model learns genuine content-based patterns rather than spurious correlations
-- Many apparent "errors" reflect administrative conventions (regulatory constraints, program restrictions) rather than content misunderstanding
+- **KB-BERT** achieves 90.9% subset accuracy for multi-label classification and 92.9% top-1 accuracy for distributional prediction
+- Error analysis revealed that many errors reflect administrative conventions (regulatory constraints, program restrictions) rather than content misunderstanding
 
 ## Repository Structure
 
