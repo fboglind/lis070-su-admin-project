@@ -1,4 +1,4 @@
-# Autoniversity Administration
+# Automated Course Classification for Stockholm University Administration
 
 This repository contains the code and materials for my LIS070 Project Course at Stockholm University, focused on developing an automated system for classifying Swedish university courses into disciplinary domains (*utbildningsområden*, UO) that determine state funding allocations.
 
@@ -16,7 +16,7 @@ Swedish universities must classify courses into predefined disciplinary domains 
 ## Repository Structure
 
 ```
-├── project-report-final-draft.pdf          # Full project report (TACL format)
+├── project-report-final-draft.pdf          # Full project report (final draft)
 ├── final-results-su-adm.pdf                # Summary of final results
 │
 ├── su-admin-baseline/
@@ -57,33 +57,28 @@ Swedish universities must classify courses into predefined disciplinary domains 
 
 - **Language Model**: KB/sentence-bert-swedish-cased
 - **Framework**: HuggingFace Transformers, scikit-learn
-- **Validation**: Bootstrap hypothesis testing, feature ablation, expert consultation
-- **Metrics**: Subset accuracy, Hamming loss, MAE, cosine similarity, Jensen-Shannon divergence
+- **Validation**: Bootstrap hypothesis testing, expert consultation
+- **Metrics**: Subset accuracy, Hamming loss, MAE, Jensen-Shannon divergence
 
 ## Data
 
 The full dataset consists of course descriptions from Stockholm University's Ladok system with UO classification labels and percentage distributions. A 50-course sample is included in this repository.
 
-### Disciplinary Domains (Utbildningsområden)
-
-The classification targets include domains such as:
-- Humaniora (Humanities)
-- Juridik (Law)
-- Naturvetenskap (Natural Sciences)
-- Samhällsvetenskap (Social Sciences)
-- Teknik (Engineering)
-- *and others*
-
-## Requirements
-
-The notebooks were developed on Kaggle. Key dependencies:
+## Key dependencies:
 - transformers
 - torch
 - scikit-learn
 - pandas
 - numpy
-- gensim (for LDA)
 
+## Installation
+
+The notebooks were developed on Kaggle with GPU support. To run locally:
+
+```bash
+pip install -r requirements.txt
+
+```
 ## Acknowledgments
 
 - **Sofia Gustafsson Capková** (SU Administration) — domain expert validation
@@ -95,7 +90,6 @@ LIS070 Project Course, Stockholm University
 December 2025
 
 ## Note
-
 
 - Data will be made available alsewhere (Zenodo or Kaggle)
 - Project is still ongoing and will be updated continously  
