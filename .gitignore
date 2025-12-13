@@ -1,6 +1,9 @@
+#virtual envs
 venv/
 env/
+su-adm
 
+#cache
 __pycache__/
 *.pyc
 *.pyo
@@ -8,10 +11,10 @@ __pycache__/
 # data
 *.csv
 *.json
-/raw_data
-/data
-/backup
-/'Projekt kursklassificering'
+**raw_data/
+**data/
+**backup/
+**'Projekt kursklassificering'/
 
 # models
 /.ipynb_checkpoints
@@ -26,16 +29,11 @@ kbbert_uo_multilabel.zip
 *.un~
 *.swp
 
-
 #ignore for now
-/bootstrap/
-final-results-su-adm1209-freeze.pdf
-final-results-su-adm1210-freeze-2.pdf
-final-results-su-adm1210-freeze-3.pdf
-final-results-su-adm1210-freeze.pdf
-/su-admin-BERT-dist-pred/material-to-expert
-/su-admin-BERT-dist-pred/misc
-*.pdf #all for nowi
+bootstrap/
+su-admin-BERT-dist-pred/material-to-expert/
+su-admin-BERT-dist-pred/misc/
 *.png
 *.html
 .gitignore_copy
+validate_model_results/ 
