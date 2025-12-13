@@ -62,7 +62,6 @@ Swedish universities must classify courses into predefined disciplinary domains 
 
 ### Technical Details
 
-- **Language Model**: KB/sentence-bert-swedish-cased
 - **Framework**: HuggingFace Transformers, scikit-learn
 - **Validation**: Bootstrap hypothesis testing, expert consultation
 - **Metrics**: Subset accuracy, Hamming loss, MAE, Jensen-Shannon divergence
