@@ -1,0 +1,41 @@
+venv/
+env/
+
+__pycache__/
+*.pyc
+*.pyo
+
+# data
+*.csv
+*.json
+/raw_data
+/data
+/backup
+/'Projekt kursklassificering'
+
+# models
+/.ipynb_checkpoints
+*.pt
+*.joblib
+*.npy
+su-admin-baseline/tfidf_baseline
+kbbert_uo_multilabel.zip
+
+
+# temps
+*.un~
+*.swp
+
+
+#ignore for now
+/bootstrap/
+final-results-su-adm1209-freeze.pdf
+final-results-su-adm1210-freeze-2.pdf
+final-results-su-adm1210-freeze-3.pdf
+final-results-su-adm1210-freeze.pdf
+/su-admin-BERT-dist-pred/material-to-expert
+/su-admin-BERT-dist-pred/misc
+*.pdf #all for nowi
+*.png
+*.html
+.gitignore_copy
