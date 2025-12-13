@@ -62,7 +62,7 @@ Swedish universities must classify courses into predefined disciplinary domains 
 
 ## Data
 
-The full dataset consists of course descriptions from Stockholm University's Ladok system with UO classification labels and percentage distributions. Due to data sharing restrictions, only a 50-course sample is included in this repository.
+The full dataset consists of course descriptions from Stockholm University's Ladok system with UO classification labels and percentage distributions. A 50-course sample is included in this repository.
 
 ### Disciplinary Domains (Utbildningsområden)
 
@@ -95,6 +95,9 @@ Fredrik Boglind
 LIS070 Project Course, Stockholm University  
 December 2025
 
-## License
+## Info
 
-This project is submitted as coursework for LIS070.
+Note:
+
+- Data will be made available alsewhere (Zenodo or Kaggle)
+- Project is still ongoing and will be updated continously  
