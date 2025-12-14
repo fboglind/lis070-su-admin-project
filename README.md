@@ -95,5 +95,5 @@ December 2025
 
 ## Note
 
-- Data will be made available alsewhere (Zenodo or Kaggle)
+- Data will be made available elsewhere (Zenodo or Kaggle)
 - Project is still ongoing and will be updated continously  
