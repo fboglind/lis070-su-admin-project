@@ -22,7 +22,13 @@ Swedish universities must classify courses into predefined disciplinary domains 
 │                                           # TF-IDF baselines (Logistic Regression, Linear SVC)
 │
 ├── su-admin-bert-binary/
+│   ├── lis070-su-admin-bert-binary.ipynb   # KB-BERT multi-label classification (cleaned-up)
+│   └── lis070-su-admin-bert-binary-not-cleaned-2025-12-31.ipynb                           
+│                                           # KB-BERT multi-label classification (original notebook)
+├── su-admin-bert-binary/
 │   └── lis070-su-admin-bert-binary.ipynb   # KB-BERT multi-label classification
+│
+│
 │
 ├── su-admin-BERT-dist-pred/
 │   └── su-admin-bert-dist-pred-final-20251208-2300.ipynb
@@ -35,6 +41,7 @@ Swedish universities must classify courses into predefined disciplinary domains 
 │       └── su_admin_preliminary_findings_and_error_analysis_v2-1-1.pdf
 │                                           # Materials prepared for domain expert review
 │
+├── results_summary.ipynb                   # Presents results
 ├── su_utils.py                             # Shared utility functions
 └── Kursplanekorpus-2023-original-ej-bearb-head50.csv
                                             # Sample data (50 lines)
