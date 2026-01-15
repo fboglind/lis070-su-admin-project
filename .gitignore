@@ -16,6 +16,7 @@ __pycache__/
 **data/
 **backup/
 **'Projekt kursklassificering'/
+*.zip
 
 # models
 /.ipynb_checkpoints
@@ -31,6 +32,7 @@ kbbert_uo_multilabel.zip
 *.swp
 
 #ignore for now
+
 bootstrap/
 su-admin-BERT-dist-pred/material-to-expert/
 su-admin-BERT-dist-pred/misc/

@@ -90,9 +90,6 @@ The notebooks were developed on Kaggle with GPU support. To run locally:
 pip install -r requirements.txt
 
 ```
-## Acknowledgments
-
-- **Sofia Gustafsson Capková** (SU Administration) — domain expert validation
 
 ## Author
 
