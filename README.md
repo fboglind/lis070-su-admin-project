@@ -1,4 +1,4 @@
-# Automated Course Classification for Stockholm University Administration
+# 🗂️ Automated Course Classification for Stockholm University Administration
 
 This repository contains the code and materials for a NLP project Course, part of the AI and Language graduate programme at Stockholm University. The goal was to develop an automated system for classifying Swedish university courses into disciplinary domains (*utbildningsområden*, UO). UO classification determine state funding allocations.
 
