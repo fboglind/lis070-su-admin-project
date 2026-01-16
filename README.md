@@ -73,8 +73,8 @@ Swedish universities must classify courses into predefined disciplinary domains 
 
 ## Data
 
-- The full dataset consists of course descriptions from Stockholm University's Ladok system with UO classification labels and percentage distributions. A 50-line sample is included in this repository.
-- Data will be made available on Zenodo (Status: Awating approval 2026-01-14)
+The full dataset consists of course descriptions from Stockholm University's Ladok system with UO classification labels and percentage distributions. A 50-line sample is included in this repository.
+- Data is available on Zenodo: https://zenodo.org/records/18256018
 
 
 ## Key dependencies:
@@ -101,4 +101,4 @@ December 2025
 
 ## Note
 
-- Data will be made available on Zenodo (Status: Awating approval 2026-01-14)
+- **Data is available on Zenodo: https://zenodo.org/records/18256018**
