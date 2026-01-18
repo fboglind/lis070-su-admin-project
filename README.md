@@ -14,8 +14,7 @@ Swedish universities must classify courses into predefined disciplinary domains 
 ## Repository Structure
 
 ```
-├── project-report-final-draft.pdf          # Full project report (final draft)
-├── final-results-su-adm.pdf                # Summary of final results
+├── project-report.pdf          # Full project report
 │
 ├── su-admin-baseline/
 │   └── lis070-su-admin-baseline-2025-12-09-final.ipynb
@@ -58,12 +57,12 @@ Swedish universities must classify courses into predefined disciplinary domains 
 | KB-BERT (binary) | Multi-label | Swedish BERT for binary UO classification |
 | KB-BERT (distributional) | LDL | Predicts percentage distributions across UOs |
 
+- Trained models are available: https://doi.org/10.5281/zenodo.18256018
+
 
 **KB-BERT** (bert-base-swedish-cased), a Swedish BERT model 
 
 - Model card: https://huggingface.co/KB/bert-base-swedish-cased
-- Paper: [Playing with Words at the National Library of Sweden](https://arxiv.org/abs/2007.01658)
-
 
 ### Technical Details
 
@@ -73,15 +72,9 @@ Swedish universities must classify courses into predefined disciplinary domains 
 
 ## Data
 
-The full dataset consists of course descriptions from Stockholm University's Ladok system with UO classification labels and percentage distributions. A 50-line sample is included in this repository. Data and trained models are available on Zenodo: https://zenodo.org/records/18256018
-
-
-## Key dependencies:
-- transformers
-- torch
-- scikit-learn
-- pandas
-- numpy
+- The dataset consists of course descriptions from Stockholm University's Ladok system with UO classification labels and percentage distributions.
+- A 50-line sample is included in this repository.
+- Full dataset are available on Zenodo: https://zenodo.org/records/18256018
 
 ## Installation
 
@@ -95,9 +88,8 @@ pip install -r requirements.txt
 ## Author
 
 Fredrik Boglind  
-LIS070 Project Course, Stockholm University  
-December 2025
+LIS070 Project Course, AI and Language Master's programme, Stockholm University  
+January 2026
 
-## Note
-
-- **UPDATE 2025-01-16:** Data and trained models are available on Zenodo: https://zenodo.org/records/18256018
+## DOI **UPDATE 2026-01-16:**
+- https://doi.org/10.5281/zenodo.18256018 
