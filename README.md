@@ -12,8 +12,9 @@ This repository contains code and materials for a project in the LIS070 Project 
 
 ```
 ├── project-report.pdf                      # Full project report
-├── su_utils.py                             # Shared utility functions
+├── requirements.txt                        # Dependencies
 ├── results_summary.ipynb                   # Results overview
+├── su_utils.py                             # Shared utility functions
 │
 ├── su-admin-baseline/
 │   └── lis070-su-admin-baseline-2025-12-09-final.ipynb
@@ -60,7 +61,7 @@ A 50-row sample is included in this repository for reference.
 The notebooks were developed on Kaggle with GPU support. To run locally:
 
 ```bash
-pip install transformers torch scikit-learn pandas gensim
+pip install -r requirements.txt
 ```
 
 ## Author
@@ -70,5 +71,5 @@ LIS070 Project Course, AI and Language Master's Programme
 Stockholm University, January 2026
 
 ## **UPDATE 2026-01-16:**
-- Data and models is now available here: https://doi.org/10.5281/zenodo.18256018
+- Data and models is now available: https://doi.org/10.5281/zenodo.18256018
 
