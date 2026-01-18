@@ -2,8 +2,6 @@
 
 This repository contains code and materials for a project in the LIS070 Project Course, part of the AI and Language graduate programme at Stockholm University. The goal was to develop an automated system for classifying Swedish university courses into disciplinary domains (*utbildningsområden*, UO), which determine state funding allocations.
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18256018.svg)](https://doi.org/10.5281/zenodo.18256018)
-
 ## Key Findings
 
 - **KB-BERT** achieves 90.9% subset accuracy for multi-label classification and 92.4% top-1 accuracy for distributional prediction
