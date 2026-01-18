@@ -91,5 +91,5 @@ Fredrik Boglind
 LIS070 Project Course, AI and Language Master's programme, Stockholm University  
 January 2026
 
-## DOI **UPDATE 2026-01-16:**
+## DOI (**UPDATE 2026-01-16:**)
 - https://doi.org/10.5281/zenodo.18256018 
