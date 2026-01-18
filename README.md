@@ -1,95 +1,76 @@
-# 🗂️ Automated Course Classification for Stockholm University Administration
+# Automated Course Classification for Stockholm University Administration
 
-This repository contains the code and materials for a NLP project Course, part of the AI and Language graduate programme at Stockholm University. The goal was to develop an automated system for classifying Swedish university courses into disciplinary domains (*utbildningsområden*, UO). UO classification determine state funding allocations.
+This repository contains code and materials for a project in the LIS070 Project Course, part of the AI and Language graduate programme at Stockholm University. The goal was to develop an automated system for classifying Swedish university courses into disciplinary domains (*utbildningsområden*, UO), which determine state funding allocations.
 
-## Project Overview
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18256018.svg)](https://doi.org/10.5281/zenodo.18256018)
 
-Swedish universities must classify courses into predefined disciplinary domains for funding purposes. This project explores machine learning approaches to automatically classify courses (of which some are interdisciplinary) using course descriptions from Stockholm University's database.
+## Key Findings
 
-### Key Findings
-
-- **KB-BERT** achieves 90.9% subset accuracy for multi-label classification and 92.9% top-1 accuracy for distributional prediction
-- Error analysis revealed that many errors reflect administrative conventions (regulatory constraints, program restrictions) rather than content misunderstanding
+- **KB-BERT** achieves 90.9% subset accuracy for multi-label classification and 92.4% top-1 accuracy for distributional prediction
+- Direct Label Distribution Learning reduces MAE by 48% compared to post-hoc normalization
+- Error analysis revealed that many prediction errors reflect administrative conventions (regulatory constraints, program restrictions) rather than content misunderstanding
 
 ## Repository Structure
 
 ```
-├── project-report.pdf          # Full project report
+├── project-report.pdf                      # Full project report
+├── su_utils.py                             # Shared utility functions
+├── results_summary.ipynb                   # Results overview
 │
 ├── su-admin-baseline/
 │   └── lis070-su-admin-baseline-2025-12-09-final.ipynb
-│                                           # TF-IDF baselines (Logistic Regression, Linear SVC)
-│
+│                                           # TF-IDF baselines (LogReg, Linear SVC)
 ├── su-admin-bert-binary/
-│   ├── lis070-su-admin-bert-binary.ipynb   # KB-BERT multi-label classification (cleaned-up)
-│   └── lis070-su-admin-bert-binary-not-cleaned-2025-12-31.ipynb                           
-│                                           # KB-BERT multi-label classification (original notebook)
-├── su-admin-bert-binary/
-│   └── lis070-su-admin-bert-binary.ipynb   # KB-BERT multi-label classification
-│
-│
-│
+│   ├── lis070-su-admin-bert-binary.ipynb   # KB-BERT multi-label (cleaned)
+│   └── lis070-su-admin-bert-binary-not-cleaned-2025-12-31.ipynb
+│                                           # KB-BERT multi-label (original)
 ├── su-admin-BERT-dist-pred/
 │   └── su-admin-bert-dist-pred-final-20251208-2300.ipynb
 │                                           # KB-BERT Label Distribution Learning
-│
 ├── su-admin-lda-topic-model/
 │   ├── lis070-su-admin-topic-modeling-20251210-final.ipynb
 │   │                                       # LDA topic modeling for validation
 │   └── to_expert/
 │       └── su_admin_preliminary_findings_and_error_analysis_v2-1-1.pdf
-│                                           # Materials prepared for domain expert review
+│                                           # Materials for domain expert review
 │
-├── results_summary.ipynb                   # Presents results
-├── su_utils.py                             # Shared utility functions
 └── Kursplanekorpus-2023-original-ej-bearb-head50.csv
-                                            # Sample data (50 lines)
+                                            # Sample data (50 rows)
 ```
 
-## Methods
+## Models Evaluated
 
-### Models Evaluated
-
-| Model | Task | Description |
+| Model | Task | Performance |
 |-------|------|-------------|
-| TF-IDF + Logistic Regression | Baseline | Traditional text classification |
-| TF-IDF + Linear SVC | Baseline | Support vector classification |
-| KB-BERT (binary) | Multi-label | Swedish BERT for binary UO classification |
-| KB-BERT (distributional) | LDL | Predicts percentage distributions across UOs |
+| TF-IDF + Logistic Regression | Multi-label baseline | 77.8% subset acc |
+| TF-IDF + Linear SVC | Multi-label baseline | 82.9% subset acc |
+| KB-BERT (binary) | Multi-label classification | 90.9% subset acc |
+| KB-BERT (distributional) | Label Distribution Learning | 92.4% top-1 acc, 1.44 MAE |
 
-- Trained models are available: https://doi.org/10.5281/zenodo.18256018
+All models use [KB-BERT](https://huggingface.co/KB/bert-base-swedish-cased) (bert-base-swedish-cased) as the base Swedish language model.
 
+## Data & Trained Models
 
-**KB-BERT** (bert-base-swedish-cased), a Swedish BERT model 
+The full dataset (course descriptions from Stockholm University's Ladok system) and trained models are available on Zenodo:
 
-- Model card: https://huggingface.co/KB/bert-base-swedish-cased
+**https://doi.org/10.5281/zenodo.18256018**
 
-### Technical Details
-
-- **Framework**: HuggingFace Transformers, scikit-learn
-- **Validation**: Bootstrap hypothesis testing, expert consultation
-- **Metrics**: Subset accuracy, Hamming loss, MAE, Jensen-Shannon divergence
-
-## Data
-
-- The dataset consists of course descriptions from Stockholm University's Ladok system with UO classification labels and percentage distributions.
-- A 50-line sample is included in this repository.
-- Full dataset are available on Zenodo: https://zenodo.org/records/18256018
+A 50-row sample is included in this repository for reference.
 
 ## Installation
 
 The notebooks were developed on Kaggle with GPU support. To run locally:
 
 ```bash
-pip install -r requirements.txt
-
+pip install transformers torch scikit-learn pandas gensim
 ```
 
 ## Author
 
 Fredrik Boglind  
-LIS070 Project Course, AI and Language Master's programme, Stockholm University  
-January 2026
+LIS070 Project Course, AI and Language Master's Programme  
+Stockholm University, January 2026
 
-## DOI (**UPDATE 2026-01-16:**)
-- https://doi.org/10.5281/zenodo.18256018 
+## **UPDATE 2026-01-16:**
+- Data and models is now available here: https://doi.org/10.5281/zenodo.18256018
+
