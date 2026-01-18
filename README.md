@@ -71,5 +71,5 @@ LIS070 Project Course, AI and Language Master's Programme
 Stockholm University, January 2026
 
 ## **UPDATE 2026-01-16:**
-- Data and models is now available: https://doi.org/10.5281/zenodo.18256018
+- Data and models are now available: https://doi.org/10.5281/zenodo.18256018
 
