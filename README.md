@@ -49,7 +49,7 @@ All models use [KB-BERT](https://huggingface.co/KB/bert-base-swedish-cased) (ber
 
 ## Data & Trained Models
 
-The full dataset (course descriptions from Stockholm University's Ladok system) and trained models are available on Zenodo:
+The full dataset (corpus with course syllabi from Stockholm University's Ladok system) and trained models are available on Zenodo:
 
 **https://doi.org/10.5281/zenodo.18256018**
 
